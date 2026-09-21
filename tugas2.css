@@ -1,0 +1,412 @@
+/* ================================
+   PROFIL FRANSISCUS CHRISTIAN
+   ================================ */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(circle at top left, #164e63, transparent 35%),
+        radial-gradient(circle at bottom right, #1e3a8a, transparent 35%),
+        #020617;
+
+    color: #e2e8f0;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    max-width: 800px;
+    margin: auto;
+
+    padding: 35px;
+    text-align: center;
+
+    background: rgba(15, 23, 42, 0.9);
+
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.5),
+        0 0 25px rgba(56, 189, 248, 0.15);
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* garis dekorasi atas */
+
+header::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6
+    );
+}
+
+
+/* Judul */
+
+header h1 {
+    font-size: 38px;
+    color: #f8fafc;
+
+    margin-bottom: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+header h2 {
+    font-size: 21px;
+    font-weight: normal;
+
+    color: #67e8f9;
+}
+
+
+/* garis */
+
+header hr {
+    border: none;
+
+    height: 2px;
+
+    margin-top: 25px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #38bdf8,
+        transparent
+    );
+}
+
+
+/* ================================
+   BIODATA
+   ================================ */
+
+body > p {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 15px 25px;
+
+    background: rgba(15, 23, 42, 0.85);
+
+    border-left: 3px solid #38bdf8;
+
+    color: #cbd5e1;
+
+    transition: 0.3s;
+}
+
+
+/* jarak biodata pertama */
+
+body > p:first-of-type {
+    margin-top: 25px;
+
+    border-radius: 15px 15px 0 0;
+}
+
+
+/* biodata terakhir */
+
+body > p:nth-of-type(4) {
+    border-radius: 0 0 15px 15px;
+}
+
+
+/* bagian label */
+
+body > p b {
+    color: #38bdf8;
+}
+
+
+/* efek hover biodata */
+
+body > p:hover {
+    background: rgba(30, 41, 59, 0.95);
+
+    padding-left: 32px;
+}
+
+
+/* ================================
+   JUDUL BAGIAN
+   ================================ */
+
+h3 {
+    max-width: 800px;
+
+    margin: 35px auto 15px;
+
+    font-size: 25px;
+
+    color: #67e8f9;
+
+    position: relative;
+}
+
+
+/* garis kecil di samping judul */
+
+h3::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 5px;
+    height: 25px;
+
+    margin-right: 10px;
+
+    vertical-align: middle;
+
+    background: #38bdf8;
+
+    border-radius: 5px;
+}
+
+
+/* ================================
+   TENTANG SAYA
+   ================================ */
+
+h3 + p {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 25px;
+
+    line-height: 1.8;
+
+    color: #cbd5e1;
+
+    background: rgba(15, 23, 42, 0.9);
+
+    border: 1px solid rgba(56, 189, 248, 0.2);
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+h3 + p b {
+    color: #67e8f9;
+}
+
+
+/* ================================
+   HOBI
+   ================================ */
+
+ul {
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 20px 25px 20px 50px;
+
+    background: rgba(15, 23, 42, 0.9);
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(56, 189, 248, 0.2);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    list-style: none;
+}
+
+
+/* setiap hobi */
+
+ul li {
+    padding: 13px;
+
+    margin-bottom: 8px;
+
+    background: rgba(30, 41, 59, 0.8);
+
+    border-radius: 10px;
+
+    color: #cbd5e1;
+
+    transition: 0.3s;
+}
+
+
+/* icon bulatan */
+
+ul li::before {
+    content: "✦";
+
+    color: #38bdf8;
+
+    margin-right: 12px;
+}
+
+
+/* efek hover */
+
+ul li:hover {
+    transform: translateX(10px);
+
+    background: rgba(8, 47, 73, 0.9);
+
+    color: white;
+
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.15);
+}
+
+
+/* ================================
+   FOTO
+   ================================ */
+
+section {
+    max-width: 800px;
+
+    margin: 35px auto;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: rgba(15, 23, 42, 0.9);
+
+    border: 1px solid rgba(56, 189, 248, 0.3);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+/* bagian foto */
+
+.tengah {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+/* gambar */
+
+.tengah img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #38bdf8;
+
+    box-shadow:
+        0 0 0 8px rgba(56, 189, 248, 0.08),
+        0 10px 35px rgba(0, 0, 0, 0.6);
+
+    transition: 0.4s;
+}
+
+
+/* efek saat mouse diarahkan ke foto */
+
+.tengah img:hover {
+    transform: scale(1.07) rotate(2deg);
+
+    border-color: #67e8f9;
+
+    box-shadow:
+        0 0 30px rgba(56, 189, 248, 0.5),
+        0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+
+/* tulisan ganteng kan */
+
+.tengah p {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #67e8f9;
+
+    font-style: italic;
+}
+
+
+/* ================================
+   RESPONSIVE HP
+   ================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 17px;
+    }
+
+    body > p {
+        padding: 13px 18px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    .tengah img {
+        width: 180px;
+        height: 180px;
+    }
+}

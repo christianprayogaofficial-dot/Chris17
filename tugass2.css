@@ -1,0 +1,165 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e40af, #38bdf8);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #1e293b;
+}
+
+/* HEADER */
+header {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    color: #2563eb;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: #334155;
+    font-size: 21px;
+}
+
+header hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #2563eb, #38bdf8);
+    margin-top: 20px;
+}
+
+/* DATA DIRI */
+body > p {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 12px 30px;
+}
+
+body > p:nth-of-type(1) {
+    padding-top: 25px;
+}
+
+body > p:nth-of-type(4) {
+    padding-bottom: 25px;
+    border-radius: 0 0 20px 20px;
+}
+
+body > p b {
+    color: #2563eb;
+}
+
+/* JUDUL */
+h3 {
+    max-width: 750px;
+    margin: 30px auto 15px;
+    color: white;
+    font-size: 23px;
+}
+
+/* TENTANG SAYA */
+h3 + p {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    line-height: 1.7;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* HOBI */
+ul {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 20px 20px 20px 45px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+ul li {
+    padding: 8px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    color: #2563eb;
+    transform: translateX(8px);
+}
+
+/* FOTO */
+section {
+    max-width: 750px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.tengah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.tengah img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #2563eb;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+    transition: 0.4s;
+}
+
+.tengah img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.6);
+}
+
+.tengah p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+    font-style: italic;
+}
+
+/* UNTUK HP */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    .tengah img {
+        width: 170px;
+        height: 170px;
+    }
+}
