@@ -1,0 +1,152 @@
+// ========================================
+// DATA PROFIL
+// ========================================
+
+// Array untuk menyimpan data profil
+let profil = [
+    "Fransiscus Christian Prayoga Situmorang",
+    "255314059",
+    "Sains dan Teknologi",
+    "Informatika"
+];
+
+
+// ========================================
+// DATA HOBI
+// ========================================
+
+// Array untuk menyimpan hobi
+let hobi = [
+    "Bermain game",
+    "Mendengarkan musik",
+    "Olahraga"
+];
+
+
+// ========================================
+// MENAMPILKAN DATA PROFIL
+// ========================================
+
+// Mengambil data nama dari array
+let nama = profil[0];
+
+// Mengambil data NIM dari array
+let nim = profil[1];
+
+// Mengambil data fakultas dari array
+let fakultas = profil[2];
+
+// Mengambil data prodi dari array
+let prodi = profil[3];
+
+
+// ========================================
+// MENAMPILKAN DATA KE HTML
+// ========================================
+
+document.getElementById("namaHeader").innerHTML = nama;
+
+document.getElementById("nama").innerHTML = nama;
+
+document.getElementById("nim").innerHTML = nim;
+
+document.getElementById("fakultas").innerHTML = fakultas;
+
+document.getElementById("prodi").innerHTML = prodi;
+
+
+// ========================================
+// BAGIAN TENTANG SAYA
+// ========================================
+
+document.getElementById("namaTentang").innerHTML = nama;
+
+document.getElementById("prodiTentang").innerHTML = prodi;
+
+document.getElementById("fakultasTentang").innerHTML = fakultas;
+
+
+// ========================================
+// MENAMPILKAN HOBI
+// ========================================
+
+// Variabel untuk menampung daftar hobi
+let daftarHobi = "";
+
+
+// Perulangan untuk mengambil data dari array hobi
+for (let i = 0; i < hobi.length; i++) {
+
+    daftarHobi += "<li>" + hobi[i] + "</li>";
+
+}
+
+
+// Memasukkan daftar hobi ke dalam HTML
+document.getElementById("daftarHobi").innerHTML = daftarHobi;
+
+
+// ========================================
+// MENAMPILKAN JUMLAH HOBI
+// ========================================
+
+let jumlahHobi = hobi.length;
+
+console.log("Jumlah hobi: " + jumlahHobi);
+
+
+// ========================================
+// MENAMPILKAN SEMUA DATA KE CONSOLE
+// ========================================
+
+console.log("===== DATA PROFIL =====");
+
+console.log("Nama      : " + nama);
+console.log("NIM       : " + nim);
+console.log("Fakultas  : " + fakultas);
+console.log("Prodi     : " + prodi);
+
+console.log("===== DAFTAR HOBI =====");
+
+for (let i = 0; i < hobi.length; i++) {
+
+    console.log((i + 1) + ". " + hobi[i]);
+
+}
+
+
+// ========================================
+// FUNCTION UNTUK MENAMPILKAN PROFIL
+// ========================================
+
+function tampilkanProfil(data) {
+
+    console.log("Nama      : " + data[0]);
+    console.log("NIM       : " + data[1]);
+    console.log("Fakultas  : " + data[2]);
+    console.log("Prodi     : " + data[3]);
+
+}
+
+
+// Memanggil function
+tampilkanProfil(profil);
+
+
+// ========================================
+// FUNCTION UNTUK MENAMPILKAN HOBI
+// ========================================
+
+function tampilkanHobi(data) {
+
+    for (let i = 0; i < data.length; i++) {
+
+        console.log("Hobi ke-" + (i + 1) + ": " + data[i]);
+
+    }
+
+}
+
+
+// Memanggil function
+tampilkanHobi(hobi);
